@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background:rgb(182, 241, 239);
+            color: black;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+        <div>Clique em mim</div>
+        <div id = 'id'>Selecionando elementos por id</div>
+        <div name = 'nome'>Selecionando elementos por nome</div>
+        <div class = 'classe'>Selecionando elementos por classe</div>
+        <div id = 'selector'>Selecionando elementos por querySelector</div>
+        <script>
+            //Selecionando elementos por tag
+            var p1 = document.getElementsByTagName('p')[1] //denomina o parágrafo 2 para a variável p1
+            document.writeln(p1.innerText) //copia o texto do parágrafo 2 (p1) 
+            document.writeln(p1.innerHTML) //copia o texto e formatação do parágrafo 2 (p1)
+            //Selecionando elementos por ID
+            var d = document.getElementById('id')
+            d.style.background = 'green'
+            //Selecionando elementos por nome
+            var n = document.getElementsByName('nome')[0]
+            n.style.background = 'red'
+            //Selecionando elementos por classe
+            var c = document.getElementsByClassName('classe')[0]
+            c.style.background = 'yellow'
+            //Selecionando elementos por querySelector
+            var q = document.querySelector('div#selector')
+            q.style.background = 'white'
+            </script>
+</body>
+</html>

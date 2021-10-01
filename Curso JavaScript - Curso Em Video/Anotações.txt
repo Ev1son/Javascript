@@ -1,0 +1,102 @@
+-- Aula 5 --
+Identificadores de variáveis: 
+Podem começar com letras, $ ou _
+Não podem começar com números
+É possível usar letras ou números
+É possível usar acentos e símbolos
+Não podem ser palavras reservadas pela linguagem
+
+Javascript não obriga uso de ;
+
+Javascript não diferencia int de float, só existe tipo number
+
+Null não é tipo null, é tipo object
+
+-- Aula 6 --
+/*Comentário em CSS*/
+
+<!-- Comentário em HTML -->
+
+Sinal de + tem a função de concatenação
+
+*Tratamento de dados da variável*
+Number.parseInt() força o tipo da variável para o tipo number inteiro
+Number.parseFloat() força o tipo da variável para o tipo number float
+Number força o tipo da variável para o tipo number, onde o JavaScript 
+
+String(n) e n.toString() força o tipo da variável para o tipo string
+
+*Formatando String*
+var = nome
+nome.length //retorna quantos caracteres a string tem
+
+Exemplo:
+var nome = window.prompt("Qual o seu nome?")
+        window.alert(`Seu nome possui ${nome.length} letras`)
+
+var = nome
+nome.toUpperCase() //retorna tudo em MAIÚSCULO
+
+Exemplo:
+var nome = window.prompt("Qual o seu nome?")
+        window.alert(`Seu nome é ${nome.toUpperCase()}`)
+
+var = nome
+nome.toLowerCase() //retorna tudo para minúsculo
+
+Exemplo:
+var nome = window.prompt("Qual o seu nome?")
+        window.alert(`Seu nome é ${nome.toLowerCase()}`)
+
+Tratar number como moeda: n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+-- Aula 7 --
+
+Operadores no Javascript
+Operadores Aritméticos
++ Soma
+- Subtração
+* Multiplicação
+/ Divisão
+% Resto da divisão inteira
+** Potência
+
+Operações de atribuição:
+n = n + 4 pode ser escrito de forma simplificada como n +=4
+Primeiro o operador depois o sinal de igual
+Se aplica para qualquer operador
+
+Auto inclementação com soma e Subtração
+var++ e var--
+
+-- Aula 8 --
+
+Operadores Relacionais
+> Maior que
+< Menor que
+>= Maior ou igual que
+<= Menor ou igual que
+== igual
+!= diferente
+
+Operadores de identidade (Faz parte dos operadores relacionais)
+=== (operador de igualdade restrita) // esse operador testa se o valor E o tipo da variável são iguais
+!== (operador de desigualdade restrito) //esse operador testa se o valor E o tipo da variável são diferentes
+
+Operadores Lógicos
+! Negação
+&& Conjunção (E lógico)
+|| Disjunção (Ou lógico)
+
+Ordem de execução dos operadores lógicos = primeiro ! segundo && terceiro ||
+
+Odem de execução com mais de um tipo de operador = primeiro os operadores aritméticos, depois os relacionais e depois os operadores lógicos 
+
+Operador Ternário
+? :
+
+'Teste' ? 'True' : 'False'
+Realiza um teste e executa o 'true' se o resultado for verdadeiro ou o 'false' se o resultado for falso
+
+Toda classe é representada por um .
+Tod ID é representado por uma #

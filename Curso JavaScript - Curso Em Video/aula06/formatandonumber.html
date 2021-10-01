@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 005</title>
+</head>
+<body>
+    <script>
+        // Teste de formatação de variáveis Number
+        var nome = window.prompt('Qual o seu nome?')
+        var cargo = window.prompt('Qual a seu cargo?')
+        var sal = Number(window.prompt('Qual o seu salário'))
+                
+    document.write(`Olá ${nome} com seu cargo atual de ${cargo} você possui uma remuneração de ${sal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+    
+    //toLocaleString chama uma função local para formatar a variável number em uma moeda local, nesse caso definida para real brasileiro
+    </script>
+</body>
+</html>
