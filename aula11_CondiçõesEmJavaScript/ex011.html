@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Nacionalidade</title>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    Qual país você mora ? <input type="text" name='text' id='pais'>
+    <input type="button" value="Verificar" onclick="testar()">
+    <div id="resultado"> </div>
+
+    <script>
+        function testar(){ 
+        var pais = document.getElementById('pais')
+        var resultado = document.getElementById('resultado')
+
+        var p = String(pais.value).toLowerCase()
+            
+        if(p == 'brasil'){
+            resultado.innerHTML=`<p>Vivendo no país ${p} você é brasileiro</p>`
+        }
+        else{
+            resultado.innerHTML =`<p>Vivendo no país ${p} você é estrangeiro</p>`         
+        }}
+    </script>
+</body>
+</html>
