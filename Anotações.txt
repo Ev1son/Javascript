@@ -101,9 +101,30 @@ Realiza um teste e executa o 'true' se o resultado for verdadeiro ou o 'false' s
 Toda classe é representada por um .
 Tod ID é representado por uma #
 
+Ao pegar um valor colocado em um input é necessário converter esse valor para string, number etc para poder trabalhar com ele
+
 -- Document Object Model -- 
 DOM
 Existem 5 formas de selecionar elementos: tag, nome, class, id, querySelector (Ver ex005)
 
 Um bloco em JS é delimitado pelo sinal de {}
 Linhas dentro do bloco só serão executadas se uma function for acionada
+
+-- Comandos VSCode--
+alt shift a = adiciona um Comandos
+alt shift f = indenta o código
+
+-- Comando para pegar as informações do relógio do sistema
+var agora = new Date() /* new Date = comando para pegar as informações do relógio do sistema  */
+var hora = agora.getHours() /* comando para definir para a variável 'hora' as horas do sistema */
+
+Ver ex013.js para exemplo
+
+-- Condições --
+Condição simples (if): se uma condição for cumprida, realiza uma ação ... senão, nada acontece feijoada
+
+Condição múltipla (if, else): se uma condição for cumprida, realiza uma ação senão realiza outra ação
+
+Condição aninhada(if, else if, else): possibilidade de realizar várias ações dependendo da condição que for cumprida, aplicável em qualquer situação
+
+Condição Múltipla(switch case): possibilidade de realizar várias ações dependendo da condição que for cumprida, porém só é aplicada para valores pontuais. No final de cada bloco deve-se colocar um break
