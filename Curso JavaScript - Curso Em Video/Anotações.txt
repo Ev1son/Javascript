@@ -100,3 +100,10 @@ Realiza um teste e executa o 'true' se o resultado for verdadeiro ou o 'false' s
 
 Toda classe é representada por um .
 Tod ID é representado por uma #
+
+-- Document Object Model -- 
+DOM
+Existem 5 formas de selecionar elementos: tag, nome, class, id, querySelector (Ver ex005)
+
+Um bloco em JS é delimitado pelo sinal de {}
+Linhas dentro do bloco só serão executadas se uma function for acionada

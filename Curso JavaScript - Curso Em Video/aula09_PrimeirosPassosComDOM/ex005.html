@@ -21,12 +21,14 @@
         <div id = 'id'>Selecionando elementos por id</div>
         <div name = 'nome'>Selecionando elementos por nome</div>
         <div class = 'classe'>Selecionando elementos por classe</div>
-        <div id = 'selector'>Selecionando elementos por querySelector</div>
+        <div class = 'selector'>Selecionando elementos por querySelector</div>
         <script>
             //Selecionando elementos por tag
             var p1 = document.getElementsByTagName('p')[1] //denomina o parágrafo 2 para a variável p1
-            document.writeln(p1.innerText) //copia o texto do parágrafo 2 (p1) 
-            document.writeln(p1.innerHTML) //copia o texto e formatação do parágrafo 2 (p1)
+            p1.style.fontWeight='bold' //muda o font weight da variável p1 para bold
+            p1.style.color='yellow' //muda o font color da variável p1 para yellow
+            document.writeln(p1.innerText) //copia o texto da variável p1 (parágrafo 2) 
+            document.writeln(p1.innerHTML) //copia o texto e formatação da variável p1 (parágrafo 2)
             //Selecionando elementos por ID
             var d = document.getElementById('id')
             d.style.background = 'green'
@@ -37,7 +39,7 @@
             var c = document.getElementsByClassName('classe')[0]
             c.style.background = 'yellow'
             //Selecionando elementos por querySelector
-            var q = document.querySelector('div#selector')
+            var q = document.querySelector('.selector')
             q.style.background = 'white'
             </script>
 </body>
