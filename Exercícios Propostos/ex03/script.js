@@ -7,33 +7,51 @@ function contar() {
 
     var passotxt = document.getElementById('pas')
     var passo = Number(passotxt.value)
-    if (fim == '') {
-        var pNovo = document.createElement('p')
-        var pConteudo = document.createTextNode(`Impossível contar sem "Fim"`)
-        pNovo.appendChild(pConteudo)
-        document.getElementById('res').appendChild(pNovo)
-    }
-    if (inicio == '') {
+
+    if (inicio == '') { //se início vazio
         inicio = 1
         alert('Início não pode ser vazio. Considerando Início = 1')
     }
-    if (passo == '') {
+    if (passo == '') { //se passo vazio
         passo = 1
         alert('Passo não pode ser vazio. Considerando Passo = 1')
     }
-    if (inicio > fim) {
-        for (inicio; inicio >= fim; inicio = inicio - passo) {
+    if (inicio > fim) { //se inicio for maior que fim
+        var titulo = document.getElementById('res')
+        titulo.innerHTML = '' //Limpa a div 'res' para não aparecer a contagem antiga
+        if (fim == '') { //se fim for vazio retorna mensagem de erro
             var pNovo = document.createElement('p')
-            var pConteudo = document.createTextNode(`${inicio} `)
+            var pConteudo = document.createTextNode(`Impossível contar sem "Fim"`)
             pNovo.appendChild(pConteudo)
             document.getElementById('res').appendChild(pNovo)
+        } else {
+            var titulo = document.getElementById('res')
+            titulo.innerHTML = ''
+
+            for (inicio; inicio >= fim; inicio = inicio - passo) {
+                var titulo = document.getElementById('titulo')
+                titulo.innerHTML = `Contando ...` //substitui o conteúdo do h2 'título'
+
+                var pNovo = document.createElement('p')
+                var pConteudo = document.createTextNode(`${inicio} `)
+                pNovo.appendChild(pConteudo)
+                document.getElementById('res').appendChild(pNovo)
+            }
         }
     } else {
+        var titulo = document.getElementById('res')
+        titulo.innerHTML = ''
+
         for (inicio; inicio <= fim; inicio = inicio + passo) {
+            var titulo = document.getElementById('titulo')
+            titulo.innerHTML = `Contando ...` 
+
             var pNovo = document.createElement('p')
             var pConteudo = document.createTextNode(`${inicio} `)
             pNovo.appendChild(pConteudo)
             document.getElementById('res').appendChild(pNovo)
+            var titulo = document.getElementById('titulo')
+            titulo.innerHTML = `Contando ...`
         }
     }
 }
