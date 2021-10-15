@@ -24,6 +24,9 @@ Number.parseInt() força o tipo da variável para o tipo number inteiro
 Number.parseFloat() força o tipo da variável para o tipo number float
 Number força o tipo da variável para o tipo number, onde o JavaScript 
 
+Pode ser usado o atributo .valueAsNumber ao inves de somente .value ao pegar o valor do elemento, assim não é preciso usar as conversões Number nas variáveis.
+var num = numtxt.valueAsNumber
+
 String(n) e n.toString() força o tipo da variável para o tipo string
 
 *Formatando String*
