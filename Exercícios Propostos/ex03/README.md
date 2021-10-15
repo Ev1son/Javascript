@@ -1,0 +1,1 @@
+Tentar futuramente escontrar uma solução para finalizar o código se um dos dados estiver faltando. Ao invés da atual solução que é considerar valor = 1
