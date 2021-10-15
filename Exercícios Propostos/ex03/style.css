@@ -5,6 +5,7 @@
 body{
     color: black;
     font: normal 16pt arial;
+    background-color: #505050;
 }
 header{
     text-align: center;
@@ -17,9 +18,15 @@ section{
     margin: 2% auto;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
 }
+h2{
+    text-align: center;
+}
 div{
     text-align: center;
     padding: 1%;
+}
+#res p {
+    display: inline;
 }
 img{
     width: 250px;
