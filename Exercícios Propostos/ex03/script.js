@@ -17,16 +17,16 @@ function contar() {
         alert('Passo não pode ser vazio. Considerando Passo = 1')
     }
     if (inicio > fim) { //se inicio for maior que fim
-        var titulo = document.getElementById('res')
-        titulo.innerHTML = '' //Limpa a div 'res' para não aparecer a contagem antiga
+        var res = document.getElementById('res')
+        res.innerHTML = '' //Limpa a div 'res' para não aparecer a contagem antiga
         if (fim == '') { //se fim for vazio retorna mensagem de erro
             var pNovo = document.createElement('p')
             var pConteudo = document.createTextNode(`Impossível contar sem "Fim"`)
             pNovo.appendChild(pConteudo)
             document.getElementById('res').appendChild(pNovo)
         } else {
-            var titulo = document.getElementById('res')
-            titulo.innerHTML = ''
+            var res = document.getElementById('res')
+            res.innerHTML = ''
 
             for (inicio; inicio >= fim; inicio = inicio - passo) {
                 var titulo = document.getElementById('titulo')
@@ -39,8 +39,8 @@ function contar() {
             }
         }
     } else {
-        var titulo = document.getElementById('res')
-        titulo.innerHTML = ''
+        var res = document.getElementById('res')
+        res.innerHTML = ''
 
         for (inicio; inicio <= fim; inicio = inicio + passo) {
             var titulo = document.getElementById('titulo')
