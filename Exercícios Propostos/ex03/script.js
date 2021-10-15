@@ -28,20 +28,21 @@ function contar() {
             res.innerHTML += `Impossível contar sem "Fim"! `
         } else {
             res.innerHTML = ''
-
+            //contagem crescente
             for (inicio; inicio >= fim; inicio = inicio - passo) {
                 titulo.innerHTML = `Contando ...` //substitui o conteúdo do h2 'título'
 
-                res.innerHTML += `${inicio} `
-            }
+                res.innerHTML += `\u{1F449} ${inicio} `
+            } res.innerHTML += `\u{1F3C1}`
         }
     } else {
         res.innerHTML = ''
-
+        //contagem decrescente
         for (inicio; inicio <= fim; inicio = inicio + passo) {
             titulo.innerHTML = `Contando ...`
 
-            res.innerHTML += `${inicio} `
-        }
+            res.innerHTML += `\u{1F449} ${inicio}  `
+        } res.innerHTML += `\u{1F3C1}`
+
     }
 }
