@@ -9,6 +9,8 @@ function converter() {
     var cm = metros * 100
     var mm = metros * 1000
 
+    /* Essa forma de adicionar conteúdo a uma tag foi a primeira forma que descobri, mas dá mais trabalho e tem mais linhas de código. O melhor é criar o elemento vazio no html, identifica-lo pelo id no JS  e então usar innerHTML para editar seu conteúdo.*/
+
     //Adicionando o h1
     var h1Novo = document.createElement('h1') //criação da tag via JS
     var h1Conteudo = document.createTextNode(`A distância de ${metros} metros equivale a:`) //conteúdo da tag
