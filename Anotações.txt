@@ -131,3 +131,14 @@ Condição múltipla (if, else): se uma condição for cumprida, realiza uma aç
 Condição aninhada(if, else if, else): possibilidade de realizar várias ações dependendo da condição que for cumprida, aplicável em qualquer situação
 
 Condição Múltipla(switch case): possibilidade de realizar várias ações dependendo da condição que for cumprida, porém só é aplicada para valores pontuais. No final de cada bloco deve-se colocar um break
+
+-- Variáveis compostas --
+Variável composta = Array = Vetor
+Variáveis simples só conseguem armazenar um valor por vez. 
+Variáveis compostas devem ser capazes de armazenar vários valores em uma mesma estrutura.
+
+Uma variável composta é uma variável que tem vários elementos que são compostos por seu valor e uma chave de identificação
+
+Estrutura de um array: consultar imagem EstruturaArray.png
+
+Declaração de um array = var num = [ 21, 2, 1998]
