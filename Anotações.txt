@@ -142,3 +142,9 @@ Uma variável composta é uma variável que tem vários elementos que são compo
 Estrutura de um array: consultar imagem EstruturaArray.png
 
 Declaração de um array = var num = [ 21, 2, 1998]
+
+Maneira de mostrar cada elemento em cada posição dentro de um vetor : consultar aula15/vetorNaTela.js
+
+Procurar valor em um vetor = vetor.indexOf(5)
+Caso o valor exista ele retorna a posição que o valor se encontra
+Caso o valor não exista no vetor ele retorna -1
