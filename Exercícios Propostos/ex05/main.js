@@ -22,6 +22,7 @@ function addValueToList() {
   option.innerHTML = `O valor ${numberValue.valueAsNumber} foi adicionado`
   selectNumberList.appendChild(option)
   inputAddNumber.value = ''
+  results.innerHTML = ''
 }
 
 function checkNumber() {
