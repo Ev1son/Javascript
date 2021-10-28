@@ -47,33 +47,25 @@ function showResults() {
   if (arrayValues.length >= 1) {
     let length = arrayValues.length
 
+    let sum = arrayValues.reduce(function (sum, i) {
+      return sum + i
+    })
+
+    let media = sum / arrayValues.length
+
     results.innerHTML = ''
 
     arrayValues.sort
 
-    let p1 = document.createElement('p')
-    p1.innerHTML = `Até agora foram cadastrados ${length} números`
-    results.appendChild(p1)
+    results.innerHTML += `<p>Até agora foram cadastrados ${length} números</p>`
 
-    let p2 = document.createElement('p')
-    p2.innerHTML = `O maior elemento do vetor é ${Math.max.apply(null, arrayValues)}`
-    results.appendChild(p2)
+    results.innerHTML += `<p>O maior elemento do vetor é ${Math.max.apply(null, arrayValues)}</p>`
 
-    let p3 = document.createElement('p')
-    p3.innerHTML = `O menor elemento do vetor é ${Math.min.apply(null, arrayValues)}`
-    results.appendChild(p3)
+    results.innerHTML += `<p>O menor elemento do vetor é ${Math.min.apply(null, arrayValues)}</p>`
 
-    let p4 = document.createElement('p')
-    let sum = arrayValues.reduce(function (sum, i) {
-      return sum + i
-    })
-    p4.innerHTML = `A soma de todos os valores do vetor é ${sum}`
-    results.appendChild(p4)
-
-    let p5 = document.createElement('p')
-    let media = sum / arrayValues.length
-    p5.innerHTML = `A média de todos os elementos do vetor é ${media.toFixed(2)}`
-    results.appendChild(p5)
+    results.innerHTML += `<p>A soma de todos os valores do vetor é ${sum}</p>`
+    
+    results.innerHTML += `<p>A média de todos os elementos do vetor é ${media.toFixed(2)}</p>`
   } else {
     alert('Pelo menos um valor é necessário!')
   }
