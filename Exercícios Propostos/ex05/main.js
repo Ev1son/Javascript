@@ -1,4 +1,5 @@
 let numberValue = document.getElementById('inputAddNumber')
+let results = document.getElementById('divResults')
 
 let arrayValues = []
 
@@ -41,8 +42,6 @@ function checkList() {
 
 function showResults() {
   if (arrayValues.length >= 1) {
-    let results = document.getElementById('divResults')
-
     let length = arrayValues.length
 
     results.innerHTML = ''
@@ -80,4 +79,5 @@ function showResults() {
 function clear() {
   selectNumberList.options.length = 0
   arrayValues = []
+  results.innerHTML = ''
 }
