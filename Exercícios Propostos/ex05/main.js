@@ -11,6 +11,7 @@ function addNumberToArray() {
     arrayValues.push(numberValue.valueAsNumber)
     console.log(arrayValues)
     addValueToList()
+    inputAddNumber.value = ''
   } else {
     alert('Valor Inválido! Verifique os dados.')
   }
