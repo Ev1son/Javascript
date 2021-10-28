@@ -10,11 +10,7 @@ function addNumberToArray() {
   numberValue = document.getElementById('inputAddNumber')
   if (checkNumber(true) && checkList(true)) {
     arrayValues.push(numberValue.valueAsNumber)
-    console.log(arrayValues)
     addValueToList()
-    inputAddNumber.value = ''
-  } else {
-    alert('Valor Inválido! Verifique os dados.')
   }
 }
 
@@ -24,13 +20,14 @@ function addValueToList() {
 
   option.innerHTML = `O valor ${numberValue.valueAsNumber} foi adicionado`
   selectNumberList.appendChild(option)
+  inputAddNumber.value = ''
 }
 
 function checkNumber() {
   if (numberValue.valueAsNumber >= 1 && numberValue.valueAsNumber <= 100) {
     return true
   } else {
-    return false
+    alert('Valor Inválido. Somente números entre 1 e 100 são válidos.')
   }
 }
 
@@ -38,7 +35,7 @@ function checkList() {
   if (arrayValues.indexOf(numberValue.valueAsNumber) == -1) {
     return true
   } else {
-    return false
+    alert('Valor já encontrado na lista.')
   }
 }
 
@@ -65,7 +62,7 @@ function showResults() {
     results.appendChild(p3)
 
     let p4 = document.createElement('p')
-    let sum = arrayValues.reduce(function (sum, i) { //método reduce para somar todos os valores do array
+    let sum = arrayValues.reduce(function (sum, i) {
       return sum + i
     })
     p4.innerHTML = `A soma de todos os valores do vetor é ${sum}`
@@ -80,7 +77,7 @@ function showResults() {
   }
 }
 
-function clear(){
-  selectNumberList.options.length=0
-  arrayValues=[]
+function clear() {
+  selectNumberList.options.length = 0
+  arrayValues = []
 }
