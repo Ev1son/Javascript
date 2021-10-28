@@ -29,6 +29,7 @@ function checkNumber() {
     return true
   } else {
     alert('Valor Inválido. Somente números entre 1 e 100 são válidos.')
+    inputAddNumber.value = ''
   }
 }
 
@@ -37,6 +38,7 @@ function checkList() {
     return true
   } else {
     alert('Valor já encontrado na lista.')
+    inputAddNumber.value = ''
   }
 }
 
