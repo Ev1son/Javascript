@@ -148,3 +148,9 @@ Maneira de mostrar cada elemento em cada posição dentro de um vetor : consulta
 Procurar valor em um vetor = vetor.indexOf(5)
 Caso o valor exista ele retorna a posição que o valor se encontra
 Caso o valor não exista no vetor ele retorna -1
+
+Método push() adiciona um ou mais elementos a uma array:
+array.push()
+
+IdHTML.elementJavascript = pesquisar mais
+Usar o id de um elemento html mais um comando q modifique o DOM é uma forma de abreviar o comando
