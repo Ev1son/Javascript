@@ -170,3 +170,23 @@ let sum = arrayValues.reduce((sum, i) => sum + i)
 
 IdHTML.elementJavascript = pesquisar mais
 Usar o id de um elemento html mais um comando q modifique o DOM é uma forma de abreviar o comando
+
+Estudar Futuramente:
+
+Functions
+
+Objetos:
+Diferente de Arrays, em objetos os identificadores não são números e sim o identificador (atributo do objeto) que for declarado. Objetos também podem guardar funções
+let obj = {
+nome: 'Evison'
+sexo: 'M'
+idade: 23
+peso: 61
+function(){} //função
+}
+
+modularização
+RegEx
+JSON
+AJAX
+NodeJS
