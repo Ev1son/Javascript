@@ -1,0 +1,11 @@
+select{
+  width: 11rem;
+}
+#addNumber{
+  width: 11rem;
+}
+
+#finish{
+  margin: 1rem 0;
+  display: block;
+}
