@@ -152,5 +152,21 @@ Caso o valor não exista no vetor ele retorna -1
 Método push() adiciona um ou mais elementos a uma array:
 array.push()
 
+array.length = para mostrar quantos elementos o vetor possui
+
+array.sort = para organizar o vetor em ordem crescente
+
+Math.max.apply(null, arrayValues) = método que retorna o maior valor de um array
+
+Math.min.apply(null, arrayValues) = método que retorna o menor valor de um array
+
+Método .reduce para somar os valores de um array
+let sum = arrayValues.reduce(function (sum, i) {
+      return sum + i
+}
+A função que executamos recebe como primeiro parâmetro uma variável que irá acumular um valor e como segundo parâmetro teremos cada um dos elementos do Array a cada iteração.
+Exemplificando como arrow function=
+let sum = arrayValues.reduce((sum, i) => sum + i)
+
 IdHTML.elementJavascript = pesquisar mais
 Usar o id de um elemento html mais um comando q modifique o DOM é uma forma de abreviar o comando
