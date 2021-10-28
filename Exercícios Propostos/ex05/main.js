@@ -4,6 +4,7 @@ let arrayValues = []
 
 document.getElementById('addNumberButton').addEventListener('click', addNumberToArray)
 document.getElementById('finish').addEventListener('click', showResults)
+document.getElementById('clear').addEventListener('click', clear)
 
 function addNumberToArray() {
   numberValue = document.getElementById('inputAddNumber')
@@ -77,4 +78,9 @@ function showResults() {
   } else {
     alert('Pelo menos um valor é necessário!')
   }
+}
+
+function clear(){
+  selectNumberList.options.length=0
+  arrayValues=[]
 }
