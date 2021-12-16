@@ -15,15 +15,8 @@ class CheckingAccount {
   }
 
   depositar(valor) {
-    console.log(`Saldo atual: ${this._saldo} reais`);
-    console.log(`Você está tentando depositar ${valor} reais`);
-    if (valor > 0) {
-      this.saldo += valor;
-      console.log(`Depósito Efetuado.`);
-      console.log(`Seu novo saldo é: ${this._saldo} reais`);
-    } else {
-      console.log("Erro ao tentar depositar.")
-    }
+    if (valor <= 0) return;
+    this._saldo += valor;
   }
 }
 
