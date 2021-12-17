@@ -1,4 +1,4 @@
 export class Client {
-  nome;
+  name;
   cpf;
 }
