@@ -1,8 +1,25 @@
+import { Client } from './Client.js';
+
 export class CheckingAccount {
   agency;
-  client;
+
+  _client;
+
+  set client(newClient) {
+    if (newClient instanceof Client) {
+      this._client = newClient;
+    }
+  }
+
+  get client() {
+    return this._client;
+  }
 
   _balance = 0;
+
+  get balance() {
+    return this._balance;
+  }
 
   withdraw(amount) {
     if (this._balance >= amount) {
@@ -15,7 +32,7 @@ export class CheckingAccount {
   deposit(amount) {
     if (amount <= 0) return console.log("\nValor inválido.\n");
     this._balance += amount;
-    console.log(`\nDepósito de ${amount} reais realizado com sucesso.\n`)
+    console.log(`\nDepósito de ${amount} reais realizado com sucesso.\n`);
   }
 
   withdrawNoMessage(amount) {
