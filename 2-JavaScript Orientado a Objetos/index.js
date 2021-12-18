@@ -7,4 +7,7 @@ const client2 = new Client("Viviane", 99988877701);
 const checkingAccount1 = new CheckingAccount(1001, client1);
 const checkingAccount2 = new CheckingAccount(1002, client2);
 
-console.log(checkingAccount1,checkingAccount2);
+
+console.log(checkingAccount1);
+console.log(checkingAccount2);
+console.log("Número de contas:",CheckingAccount.numberOfAccounts);
