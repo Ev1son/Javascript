@@ -1,0 +1,12 @@
+{
+  "name": "javascript-orientado-a-objetos",
+  "version": "1.0.0",
+  "description": "Estudos de programação orientada a objetos com javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Evison",
+  "license": "MIT",
+  "type":"module"
+}
