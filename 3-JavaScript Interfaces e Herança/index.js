@@ -10,6 +10,10 @@ const checkingAccount2 = new CheckingAccount(102, client2);
 
 const savingsAccount1 = new SavingsAccount(201, client1, 1200);
 
+checkingAccount1.deposit(500);
+checkingAccount1.withdraw(100);
+
+savingsAccount1.withdraw(10);
+
 console.log(checkingAccount1);
-console.log(checkingAccount2);
 console.log(savingsAccount1);

@@ -6,4 +6,11 @@ export class CheckingAccount extends Account{
     super(agency, client, 0);
     CheckingAccount.numberOfAccounts++;
   }
+
+  //sobrescrevendo o comportamento do método 'withdraw' da classe mãe
+  withdraw(amount) {
+    let rate = 1.1;
+    return this._withdraw(rate, amount);
+  }
+
 }
