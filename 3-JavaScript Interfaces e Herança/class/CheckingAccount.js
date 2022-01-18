@@ -9,7 +9,7 @@ export class CheckingAccount extends Account{
 
   //sobrescrevendo o comportamento do método 'withdraw' da classe mãe
   withdraw(amount) {
-    let rate = 1.1;
+    const rate = 1.1;
     return this._withdraw(rate, amount);
   }
 
