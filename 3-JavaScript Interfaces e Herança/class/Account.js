@@ -3,7 +3,7 @@ import { Client } from './Client.js';
 export class Account {
   constructor(agency, client, balance) {
     if(this.constructor == Account){
-      throw new Error("Você não deveria instanciar um objeto do tipo 'Account' diretamente");
+      throw new Error("Você não deveria instanciar um objeto do tipo 'Account' diretamente, pois essa é uma classe abstrata");
     }
     
     this._agency = agency;
@@ -26,8 +26,7 @@ export class Account {
   }
 
   withdraw(amount) {
-    let rate = 1;
-    return this._withdraw(rate, amount);
+    throw new Error("O método 'withdraw' precisa ser sobrescrito na classe que for chamado, pois é um método abstrato ")
   }
 
   _withdraw(rate, amount){
