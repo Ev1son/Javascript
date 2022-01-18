@@ -2,9 +2,13 @@ import { Client } from './Client.js';
 
 export class Account {
   constructor(agency, client, balance) {
+    if(this.constructor == Account){
+      throw new Error("Você não deveria instanciar um objeto do tipo 'Account' diretamente");
+    }
+    
     this._agency = agency;
     this._client = client;
-    this._balance = balance;
+    this._balance = balance;    
   }
 
   set client(newClient) {
