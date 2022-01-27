@@ -5,10 +5,14 @@ export class Employee{
     this._salary = salary;
 
     this._bonus = 1;
-    this._senha;
+    this._password;
   }
 
-  registerPassword(senha){
-    this._senha = senha;
+  get password(){
+    return this._password;
+  }
+
+  registerPassword(password){
+    this._password = password;
   }
 }
